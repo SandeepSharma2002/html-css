@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Exam Form</title>
+  </head>
+
+  <body>
+    <div class="container" style="border: 2px solid black;">
+      <form action="#">
+        <h1 class="heading"> <u>Fill Details</u></h1>
+        <hr />
+        <p>Student's Name -> <input type="text" required /></p>
+        <p>
+          Student's Roll. NO ->
+          <input type="number" name="roll" id="roll" placeholder="1234 5678" />
+        </p>
+        <p>
+          Email
+          <input
+            type="email"
+            name="ema"
+            id="ema"
+            required
+            placeholder="abc@gmail.com"
+          />
+        </p>
+
+        <fieldset id="semester">
+          <legend>semester</legend>
+          <p>III <input type="radio" name="semester" id="1" required /></p>
+          <p>V <input type="radio" name="semester" id="2" required /></p>
+          <p>VI <input type="radio" name="semester" id="3" required /></p>
+        </fieldset>
+        <fieldset>
+          <legend>Subjects</legend>
+          <p>POC <input type="checkbox" name="a" id="POC" required /></p>
+          <p>OOPS <input type="checkbox" name="a" id="OOPS" required /></p>
+          <p>DSA <input type="checkbox" name="a" id="DSA" required /></p>
+          <p>COA <input type="checkbox" name="a" id="COA" required /></p>
+        </fieldset>
+
+        <h2>Payment Details</h2>
+        <h4>Select Payment Mode</h4>
+        <p>Paytm <input type="radio" name="semester" id="Payt" /></p>
+        <p>Net Banking <input type="radio" name="semester" id="netb" /></p>
+        <p>Card <input type="radio" name="semester" id="CARDT" /></p>
+
+        <p>
+          Card Type:
+          <select name="Card" id="21">
+            <option value="">Select a Card</option>
+            <option value="VISA">VISA</option>
+            <option value="RUPEY">RUPEY</option>
+            <option value="MASTERCARD">MASTERCARD</option>
+          </select>
+        </p>
+
+        <h3>Card Details</h3>
+        <p>
+          Card No.
+          <input
+            type="number"
+            name="no"
+            id="Card_No"
+            required
+            placeholder="1111-2222-3333-4444"
+          />
+        </p>
+        <p>
+          CVV No.
+          <input
+            type="password"
+            name="no"
+            id="CVV"
+            required
+            placeholder="***"
+          />
+        </p>
+        <p>Expiry Date <input type="date" name="no" id="EDATE" required /></p>
+      <input type="submit" value="Submit" class="btn">
+      <!-- <button type="submit" class="btn">Submit</button> -->
+      </form>
+    </div>
+    <script src="javas.js"></script>
+  </body>
+</html>

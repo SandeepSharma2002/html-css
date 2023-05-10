@@ -1,0 +1,158 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+    background-color: rgb(207, 231, 239);
+}
+a{
+    text-decoration: none;
+}
+/* Header CSS */
+#container{
+  display: flex;
+  background-color: aqua;
+  padding: 10px;
+  width: 100%;
+  z-index: -1;
+  /* justify-content: flex-end; */
+}
+#navbar {
+    display: inline;
+}
+#container ul {
+  display: flex;
+  list-style: none;
+}
+#container ul li a{
+    color: white;
+}
+#container a {
+    padding: 5px;
+    color: blue;
+}
+#heading{
+    margin: auto;
+}
+#heading a{
+    justify-self: center;
+    font-size: 2rem;
+    color: brown;
+    cursor:inherit;
+}
+#account{
+    margin-top: 13px;
+    display: block;
+    margin-left: auto;
+    
+}
+#account a {
+  border-left: 2px solid blue;
+}
+
+/* Main Body CSS */
+
+.sections{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+}
+   /* Sidebar CSS */
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(127, 134, 134);
+    border: 1px solid cadetblue;
+    border-radius: 8px;
+    margin-left: 40px;
+    margin-top: 20px;
+    height: fit-content;
+    width: 20%;
+}
+.sidebar a{
+    padding: 5px;
+}
+.sidebar img{
+    margin: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 100%;
+}
+.sidebar a:hover{
+    background-color: blue;
+    color: azure;
+}
+
+  /* Main Material */
+
+  /* Top Section1 */
+
+.Section1{
+    margin: auto;
+    padding: 0px 20px;
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+}
+.Section1 p{
+    font-size: 20px;
+    font-weight: 600;
+    color: blue;
+}
+#people{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 2px solid grey;
+}
+#people img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    flex-wrap: wrap;
+}
+.imgtext{
+    display:flex;
+    flex-direction: column;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    flex-wrap: wrap;
+    padding: 5px 0px 10px 20px;
+
+}
+/* Top Articles */
+#Articles{
+    display: flex;
+    padding-bottom: 10px;
+    width: 100%;
+}
+#Articles img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    /* flex-wrap: wrap; */
+}
+/* section2 */
+
+.Section2{
+    margin: 20px;
+    padding: 0px 20px;
+    background-color: white;
+    border-radius: 8px;   
+}
+#Topblabla{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+#Topblabla img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    flex-wrap: wrap;
+}
+
+
+
